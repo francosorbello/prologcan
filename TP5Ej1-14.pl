@@ -1,0 +1,21 @@
+auto(juan).
+auto(jose).
+auto(jeremias).
+amigo(ana,jose).
+amigo(analia,juan).
+amigo(anacleta,juan).
+amigo(anastasia,jose).
+amigo(jose,jeremias).
+amigo(roberto,jeremias).
+cerca(aida).
+cerca(analia).
+lejos(roberto).
+lejos(raul).
+lejos(rodrigo).
+lejos(ana).
+lejos(anastasia).
+lejos(anacleta).
+jugo(jose).
+jugo(jeremias).
+vino(juan).
+seguro(X,Y):-lejos(X),auto(Y),amigo(X,Y),jugo(Y). %es seguro que X sea llevado por Y
