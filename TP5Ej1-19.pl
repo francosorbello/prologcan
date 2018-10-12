@@ -2,6 +2,8 @@
 primo(1).
 primo(X):-Div is X-1,foreach(between(2,Div,Y), (X mod Y) =\= 0).
 
+primo2(N):-findall(X,(between(1,N,X),(N mod X)=\=0),[1,N]).
+
 mcd(X,0,X):-!.
 mcd(X,Y,Rta):-Y>0, Resto is (X mod Y),mcd(Y,Resto,Rta).
 
