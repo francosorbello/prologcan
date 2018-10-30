@@ -11,3 +11,4 @@ multirot(L1,L2):-compruebo(L1,L2,L3),rotacion(L1,LR),multirot(LR,L3).
 compruebo([],L1,L2):-append(L1,[],L2),!.
 compruebo([X|Xs],[Y|Ys],List2):-X==Y,compruebo(Xs,Ys,List2).
 compruebo([X|_],[Y|_]):-X\=Y,!.
+
